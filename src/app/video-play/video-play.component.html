@@ -1,0 +1,7 @@
+<button (click)="playVideo = !playVideo">Play Video</button>
+<div class="video" *ngIf="playVideo">
+    <video controls autoplay #videoPlayer  style="width: 250px; height: 250px;">
+        <source src="{{videoSource}}" type="video/mp4" />
+        Browser not supported
+    </video>
+</div>
